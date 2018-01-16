@@ -10,4 +10,8 @@ _Gelobt sei Jesus Christus._
 
 Hier erstellen wir gerade eine neue Webseite. Schau bald wieder vorbei!
 
+## Kalender
+
+{% include Kalender.html %}
+
 [logo]: assets/Pfarrlogo_2017_Jugend.png
