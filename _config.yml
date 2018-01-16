@@ -1,1 +1,7 @@
 markdown: kramdown
+
+gems:
+  - github-pages
+  - jekyll-coffeescript
+
+host: 0.0.0.0
