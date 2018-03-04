@@ -22,9 +22,11 @@ defaults:
 
 markdown: kramdown
 
+permalink: :title
+
 plugins:
   - jekyll-coffeescript
-  
+
 repository: junge-pfarre/junge-pfarre.github.io
 
 host: 0.0.0.0
