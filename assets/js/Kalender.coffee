@@ -37,7 +37,7 @@ xhr.addEventListener 'readystatechange', ->
                                                   </ul>
                                                 </li>"
       if calendarListItems
-        calendarList.innerHTML = '<ul>' + calendarListItems + '</ul>'
+        calendarList.innerHTML = '<p>Die Termine im nächsten Monat:</p><ul>' + calendarListItems + '</ul>'
       else
         calendarList.innerHTML = 'Im nächsten Monat sind keine Veranstaltungen geplant.'
     else
