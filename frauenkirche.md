@@ -27,10 +27,10 @@ _Die Kaiserloge, unser Medidationsraum_
 ![Die Dank-Bar][4]
 _Die Dank-Bar_
 
-[5]: {{ site.baseurl }}{% link /assets/Frauenkirche-Baden.JPG %}
-[1]: {{ site.baseurl }}{% link /assets/Blume.JPG %}
-[2]: {{ site.baseurl }}{% link /assets/Chill-Raum01.JPG %}
-[3]: {{ site.baseurl }}{% link /assets/Chill-Raum02.JPG %}
-[6]: {{ site.baseurl }}{% link /assets/Gruppenraum.JPG %}
-[7]: {{ site.baseurl }}{% link /assets/Kaiserlounge.JPG %}
-[4]: {{ site.baseurl }}{% link /assets/Dank-Bar.JPG %}
+[5]: {{ site.baseurl }}{% link /assets/location-fotos/Frauenkirche-Baden.JPG %}
+[1]: {{ site.baseurl }}{% link /assets/location-fotos/Blume.JPG %}
+[2]: {{ site.baseurl }}{% link /assets/location-fotos/Chill-Raum01.JPG %}
+[3]: {{ site.baseurl }}{% link /assets/location-fotos/Chill-Raum02.JPG %}
+[6]: {{ site.baseurl }}{% link /assets/location-fotos/Gruppenraum.JPG %}
+[7]: {{ site.baseurl }}{% link /assets/location-fotos/Kaiserlounge.JPG %}
+[4]: {{ site.baseurl }}{% link /assets/location-fotos/Dank-Bar.JPG %}
