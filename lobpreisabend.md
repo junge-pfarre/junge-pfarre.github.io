@@ -10,4 +10,4 @@ DU möchtest Gott begegnen? Seine Stimme deutlicher hören? Seine Liebe erfahren
 
 Wir freuen uns darauf, dich kennenzulernen,
 
-Deine Lobpreisabendteam :-)
+Dein Lobpreisabendteam :-)

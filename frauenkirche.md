@@ -21,8 +21,8 @@ _Unser gemütlicher Chill-Raum_
 ![Der Gruppenraum][6]
 _Der Gruppenraum_
 
-![Die Kaiserloge, unser Medidationsraum][7]
-_Die Kaiserloge, unser Medidationsraum_
+![Die Kaiserloge, unser Meditationsraum][7]
+_Die Kaiserloge, unser Meditationsraum_
 
 ![Die Dank-Bar][4]
 _Die Dank-Bar_
