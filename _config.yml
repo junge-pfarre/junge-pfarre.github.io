@@ -10,15 +10,15 @@ email: jugend@baden-st-stephan.at
 
 lang: de_DE
 
-collections:
-- flyer
-
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: "assets/flyer"
+    values:
+      flyer: true
 
 markdown: kramdown
 
