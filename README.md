@@ -8,7 +8,7 @@ Die _Junge Pfarre Baden St. Stephan_ ist die Gemeinschaft aus Jugendlichen und j
 
 # Mithelfen
 
-Wenn dir Fehler auffallen, oder du Verbesserungs-Ideen hast, dann freuen wir uns, wenn du ein [Issue][2] darüber eröffnest. Wir werden uns so bald wie möglich bei dir melden.
+Wenn dir Fehler auffallen, oder du Verbesserungs-Ideen hast, dann freuen wir uns, wenn du ein [Issue][2] darüber eröffnest oder uns eine E-Mail schreibst. Wir werden uns so bald wie möglich bei dir melden.
 
 Im [Wiki][3] finden sich außerdem einige Seiten, die erklären, wie wir die Webseite aktuell halten und entwickeln:
 - Der [Workflow][4] beschreibt die Arbeitsweise des Coding-Teams.
@@ -30,4 +30,4 @@ Unsere Kontaktdetails finden sich auf der [Webseite][8] ganz unten.
 [5]: https://github.com/junge-pfarre/junge-pfarre.github.io/wiki/Posts-mit-Fotos-schreiben
 [6]: http://junge-pfarre.baden-st-stephan.at/fotos
 [7]: https://github.com/junge-pfarre/junge-pfarre.github.io/wiki/Lokal-testen
-[8]: http://junge-pfarre.baden-st-stephan.at/
+[8]: http://junge-pfarre.baden-st-stephan.at/#kontakt
