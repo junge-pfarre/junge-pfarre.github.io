@@ -2,10 +2,11 @@
 ---
 
 #Dieses Script parsed diesen Online-Kalender im Atom/XML-Format: https://posteo.de/calendars/feed/s49fo2ntyyrp1pfk1u9vq1h34ho9j93v
-#und fügt es in die Webseite ein.
+#und fügt ihn in die Webseite ein.
 #Nach diesem Tutorial: https://coffeescript-cookbook.github.io/chapters/ajax/ajax_request_without_jquery (Coffeescript Cookbook)
 
 xhr = new XMLHttpRequest()
+calendarList = null;
 
 xhr.addEventListener 'readystatechange', ->
   if xhr.readyState is 4                                                        #ReadyState Complete
@@ -24,7 +25,6 @@ xhr.addEventListener 'readystatechange', ->
       testtime.setHours(testtime.getHours() - 11)
       events = (event for event in events when event.date > testtime)           #Vergangene Events werden nach 12 Stunden (11h in MESZ) aussortiert
       events.reverse()                                                          #Umordnen, da Originaldaten absteigend geordnet sind
-      calendarList = document.getElementById 'calendar'                         #<div> mit entsprechender Id suchen
       calendarListItems = ''
       dateOptions = {weekday: "short", month: "2-digit", day: "2-digit"}
       hourOptions = {hour: "numeric", minute: "2-digit"}
@@ -41,7 +41,10 @@ xhr.addEventListener 'readystatechange', ->
       else
         calendarList.innerHTML = 'Im nächsten Monat sind keine Veranstaltungen geplant.'
     else
-      calendarList.innerHTML = 'Fehler beim Laden der Kalenderdaten.'
+      calendarList.innerHTML = 'Fehler beim Laden der Kalenderdaten. Probiere es später noch einmal oder kontaktiere uns (siehe unten).'
 
 xhr.open 'GET', 'https://cors-anywhere.herokuapp.com/https://posteo.de/calendars/feed/s49fo2ntyyrp1pfk1u9vq1h34ho9j93v'
-xhr.send()
+
+window.onload = ->
+  calendarList = document.getElementById 'calendar'                               #<div> mit entsprechender Id suchen
+  xhr.send()
