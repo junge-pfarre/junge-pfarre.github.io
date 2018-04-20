@@ -7,6 +7,11 @@
 
 xhr = new XMLHttpRequest()
 calendarList = null;
+URLREGEX = /(?:(?:ht|f)tp(?:s?)\:\/\/|~\/|\/)?(?:\w+:\w+@)?((?:(?:[-\w\d{1-3}]+\.)+(?:com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|edu|co\.uk|ac\.uk|it|fr|tv|museum|asia|local|travel|[a-z]{2}))|((\b25[0-5]\b|\b[2][0-4][0-9]\b|\b[0-1]?[0-9]?[0-9]\b)(\.(\b25[0-5]\b|\b[2][0-4][0-9]\b|\b[0-1]?[0-9]?[0-9]\b)){3}))(?::[\d]{1,5})?(?:(?:(?:\/(?:[-\w~!$+|.,=]|%[a-f\d]{2})+)+|\/)+|\?|#)?(?:(?:\?(?:[-\w~!$+|.,*:]|%[a-f\d{2}])+=?(?:[-\w~!$+|.,*:=]|%[a-f\d]{2})*)(?:&(?:[-\w~!$+|.,*:]|%[a-f\d{2}])+=?(?:[-\w~!$+|.,*:=]|%[a-f\d]{2})*)*)*(?:#(?:[-\w~!$ |\/.,*:;=]|%[a-f\d]{2})*)?/ig;               #Source: https://github.com/component/regexps/blob/master/index.js#L3
+
+urlify = (eventTitle, eventDesc) ->
+  eventDesc.replace(URLREGEX, "<a href=\"$&\" target=\"_blank\">$1</a>")
+
 
 xhr.addEventListener 'readystatechange', ->
   if xhr.readyState is 4                                                        #ReadyState Complete
@@ -33,7 +38,7 @@ xhr.addEventListener 'readystatechange', ->
                                                   <ul class=\"event-details\">
                                                     <li>Beginn: #{event.date.toLocaleString([], hourOptions)}</li>
                                                     <li>Ort: #{event.venue}</li>
-                                                    <li class=\"event-description\">#{event.description}</li>
+                                                    <li class=\"event-description\">#{urlify(event.title,event.description)}</li>
                                                   </ul>
                                                 </li>"
       if calendarListItems
