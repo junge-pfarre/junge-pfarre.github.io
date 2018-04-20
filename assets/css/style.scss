@@ -343,6 +343,10 @@ Small Device Styles
   nav > ul > li > a, #last_menu_item {
     border: 0;
   }
+
+  .has_subitems {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
