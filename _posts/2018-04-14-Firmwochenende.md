@@ -18,7 +18,7 @@ Ein paar Jugendliche der Jungen Pfarre begleiteten die Firmlinge beim Firmwochen
 ![Lagerfeuerfoto 01][5]
 *Lagerfeuer-Foto Nr. 1*
 
-![Lagerfeuerfoto 02][5]
+![Lagerfeuerfoto 02][6]
 *Lagerfeuer-Foto Nr. 2*
 
 ![Pfarrer Clemens Abrahamowicz predigt bei der Messe in der Kapelle. Sonne aus Teelichtern im Vordergrund, Firmlinge auf den Bänken rundherum.][7]
