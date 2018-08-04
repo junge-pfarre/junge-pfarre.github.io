@@ -5,8 +5,8 @@ Die Abendleitung sucht jedes Mal im Vorhinein eine Textstelle aus, die wir dann 
 
 Nach dem Abschlussgebet sitzen wir dann meistens noch gemeinsam in den Jugendräumen und lassen **in gemütlicher Atmosphäre** den Abend ausklingen.
 
-* Termin: Alle 2-4 Wochen
-* Uhrzeit: 19:30--21:00
+* Termin: Jeden 2. Sonntag - den nächsten Termin findest du im [Kalender]({{ site.baseurl }}{% link kalender.md %})
+* Uhrzeit: 19:00--20:30
 * Wo: In den Jugendräumen der Frauenkirche Baden
 * Was brauche ich: Interesse an der Bibel und am gemeinsamen Austausch über das Wort Gottes
 
