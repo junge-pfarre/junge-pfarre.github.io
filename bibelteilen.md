@@ -12,6 +12,9 @@ Nach dem Abschlussgebet sitzen wir dann meistens noch gemeinsam in den Jugendrä
 
 Wir freuen uns auf dich! :-)
 
+![7 junge Menschen sitzen nach dem Bibelteilen noch zusammen]({{ site.baseurl }}{% link assets/fotos/Bibelteilen.jpeg %})
+_Gemütliches Zusammensitzen nach dem Bibelteilen_
+
 ## Bibelteilen-Leitfaden
 
 Du möchtest nachschauen, was dich beim Bibelteilen genau erwartet, oder sogar selbst mit Freunden bibelteilen? In den [Downloads]({{ site.baseurl }}{% link downloads.md %}) findest du unseren Bibelteilen-Leitfaden zum Herunterladen.
