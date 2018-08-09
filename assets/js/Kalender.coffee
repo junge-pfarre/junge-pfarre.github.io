@@ -26,6 +26,12 @@ toLink = (eventTitle) ->
   if eventTitle.includes("Bibelteilen") then return "{% link bibelteilen.md %}"
   if eventTitle.includes("Jugendvigil") then return "{% link jugendvigil.md %}"
 
+stringifyDuration = (duration) ->
+  if duration.compare(new ICAL.Duration({ hours: 1 })) < 0 then return "#{duration.minutes} Minuten" # less than an hour
+  if duration.compare(new ICAL.Duration({ hours: 24 })) < 0 and duration.compare(new ICAL.Duration({ hours: 1 })) > -1 # between 1 and 24 hours
+    return "#{(duration.hours+duration.minutes/60).toLocaleString('de')} Stunden"
+  if duration.compare(new ICAL.Duration({ hours: 24 })) > -1 # greater or equal 24
+    return "#{duration.days} Tag(e) #{duration.hours} Stunden"
 
 xhr.addEventListener 'readystatechange', ->
   if xhr.readyState is 4                                    #ReadyState Complete
@@ -69,7 +75,7 @@ xhr.addEventListener 'readystatechange', ->
       for event in allEvents
         calendarListItems = calendarListItems + "<li><span class=\"date\">#{event.startDate.toJSDate().toLocaleString([], dateOptions)}</span> | #{event.summary}
                                                   <ul class=\"event-details\">
-                                                    <li>Beginn: #{event.startDate.toJSDate().toLocaleString([], hourOptions)}</li>
+                                                    <li>Beginn: #{event.startDate.toJSDate().toLocaleString([], hourOptions)} (Dauer: #{stringifyDuration(event.duration)})</li>
                                                     <li>Ort: #{event.location}</li>
                                                     <li class=\"event-description\">#{urlify(event.summary,event.description)}</li>
                                                   </ul>
