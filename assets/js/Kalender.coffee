@@ -74,6 +74,7 @@ xhr.addEventListener 'readystatechange', ->
 
       for event in allEvents
         event.description = urlify(event.summary,event.description)
+        event.location = "wird bekanntgegeben" unless event.location
         calendarListItems = calendarListItems + "<li><span class=\"date\">#{event.startDate.toJSDate().toLocaleString([], dateOptions)}</span> | #{event.summary}
                                                   <ul class=\"event-details\">
                                                     <li>Beginn: #{event.startDate.toJSDate().toLocaleString([], hourOptions)} (Dauer: #{stringifyDuration(event.duration)})</li>
