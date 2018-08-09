@@ -16,11 +16,10 @@ URLREGEX = /(?:(?:ht|f)tp(?:s?)\:\/\/|~\/|\/)?(?:\w+:\w+@)?((?:(?:[-\w\d{1-3}]+\
 LINKTEXT = "Mehr Infos..."
 
 urlify = (eventTitle, eventDesc) ->
-  eventDesc = eventDesc.replace(URLREGEX, "<a href=\"$&\" target=\"_blank\">$1</a>")
+  if eventDesc then eventDesc = eventDesc.replace(URLREGEX, "<a href=\"$&\" target=\"_blank\">$1</a>")
   separator = if eventDesc then " +++ " else ''
   if eventTitle.includes("Bibelteilen") or eventTitle.includes("Jugendvigil")
     eventDesc = "<a href=\"{{ site.baseurl }}#{toLink(eventTitle)}\">#{LINKTEXT}</a>" + separator + eventDesc
-  eventDesc
 
 toLink = (eventTitle) ->
   if eventTitle.includes("Bibelteilen") then return "{% link bibelteilen.md %}"
@@ -31,7 +30,7 @@ stringifyDuration = (duration) ->
   if duration.compare(new ICAL.Duration({ hours: 24 })) < 0 and duration.compare(new ICAL.Duration({ hours: 1 })) > -1 # between 1 and 24 hours
     return "#{(duration.hours+duration.minutes/60).toLocaleString('de')} Stunden"
   if duration.compare(new ICAL.Duration({ hours: 24 })) > -1 # greater or equal 24
-    return "#{duration.days} Tag(e) #{duration.hours} Stunden"    
+    return "#{duration.days} Tag(e) #{duration.hours} Stunden"
 
 xhr.addEventListener 'readystatechange', ->
   if xhr.readyState is 4                                    #ReadyState Complete
@@ -73,13 +72,19 @@ xhr.addEventListener 'readystatechange', ->
       a.startDate.toJSDate() - b.startDate.toJSDate())
 
     for event in allEvents
+      event.description = urlify(event.summary,event.description)
       calendarListItems = calendarListItems + "<li><span class=\"date\">#{event.startDate.toJSDate().toLocaleString([], dateOptions)}</span> | #{event.summary}
                                                 <ul class=\"event-details\">
                                                   <li>Beginn: #{event.startDate.toJSDate().toLocaleString([], hourOptions)} (Dauer: #{stringifyDuration(event.duration)})</li>
-                                                  <li>Ort: #{event.location}</li>
-                                                  <li class=\"event-description\">#{urlify(event.summary,event.description)}</li>
+                                                  <li>Ort: #{event.location}</li>"
+      if event.description
+        calendarListItems = calendarListItems +  "<li class=\"event-description\">#{event.description}</li>
                                                 </ul>
                                               </li>"
+      else
+        calendarListItems = calendarListItems + "</ul>
+                                              </li>"
+
     if calendarListItems
       calendarList.innerHTML = '<p>Die Termine im nächsten Monat:</p><ul>' + calendarListItems + '</ul>'
     else
