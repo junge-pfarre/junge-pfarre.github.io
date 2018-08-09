@@ -18,13 +18,13 @@ LINKTEXT = "Mehr Infos..."
 urlify = (eventTitle, eventDesc) ->
   eventDesc = eventDesc.replace(URLREGEX, "<a href=\"$&\" target=\"_blank\">$1</a>")
   separator = if eventDesc then " +++ " else ''
-  if ["Bibelteilen","Jugendvigil"].includes(eventTitle) then eventDesc = "<a href=\"{{ site.baseurl }}#{toLink(eventTitle)}\">#{LINKTEXT}</a>" + separator + eventDesc
+  if eventTitle.includes("Bibelteilen") or eventTitle.includes("Jugendvigil")
+    eventDesc = "<a href=\"{{ site.baseurl }}#{toLink(eventTitle)}\">#{LINKTEXT}</a>" + separator + eventDesc
   eventDesc
 
 toLink = (eventTitle) ->
-  switch eventTitle
-    when "Bibelteilen" then return "{% link bibelteilen.md %}"
-    when "Jugendvigil" then return "{% link jugendvigil.md %}"
+  if eventTitle.includes("Bibelteilen") then return "{% link bibelteilen.md %}"
+  if eventTitle.includes("Jugendvigil") then return "{% link jugendvigil.md %}"
 
 
 xhr.addEventListener 'readystatechange', ->
