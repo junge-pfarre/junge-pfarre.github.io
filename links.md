@@ -4,7 +4,7 @@
 
 - [Junge Kirche (Erzdiözese Wien)](https://www.erzdioezese-wien.at/pages/inst/26098454/)
 
-- [Katholische Jugend Baden, Mödling & Perchtoldsdorf](https://kjbaden.wordpress.com/)
+- [Junge Kirche Region Baden & Mödling](https://kjbaden.wordpress.com/)
 
 - [Pfarre Baden St. Stephan](http://www.baden-st-stephan.at/)
 
