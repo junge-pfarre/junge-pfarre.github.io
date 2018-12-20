@@ -1,5 +1,5 @@
 ---
-title: Firmwochenende 2018 in Stift Göttweig
+title: Firmwochenende in Stift Göttweig
 ---
 Ein paar Jugendliche der Jungen Pfarre begleiteten die Firmlinge beim Firmwochenende 2018 und halfen tatkräftig mit.
 

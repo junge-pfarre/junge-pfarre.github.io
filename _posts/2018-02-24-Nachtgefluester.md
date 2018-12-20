@@ -1,5 +1,5 @@
 ---
-title: Nachtgeflüster 2018
+title: Nachtgeflüster
 ---
 ![Gruppenfoto beim Nachtgeflüster 2018][1]
 *Gruppenfoto*

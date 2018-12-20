@@ -1,5 +1,5 @@
 ---
-title: Sommerfest 2018
+title: Sommerfest
 ---
 
 Gemeinsam mit dem KiKi-Team (Kinderkirche) veranstaltete die Junge Pfarre das Pfarr-Sommerfest. Nach einer Familien- und Jugendmesse mit toller Musik gab es Kinderprogamm und Grillerei im Pfarrheim.

@@ -1,5 +1,5 @@
 ---
-title: Jugendandacht Gründonnerstag 2018
+title: Jugendandacht Gründonnerstag
 ---
 ![Altar der Josefskapelle in der Pfarrkirche Baden St. Stephan][1]
 

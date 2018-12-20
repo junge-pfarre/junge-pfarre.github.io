@@ -1,5 +1,5 @@
 ---
-title: Jugendwallfahrt 2018
+title: Jugendwallfahrt
 photo_filter: Jugendwallfahrt2018
 description: Die alljährliche Jugendwallfahrt führte uns wieder über Berndorf und den Geyer nach Gutenstein zum Mariahilfberg. Los ging es am Samstag kurz nach 8 Uhr mit der Verabschiedung und dem Segen von Pfarrer Clemens vor der Dreifaltigkeitssäule am Hauptplatz in Baden. Auf dem Weg gab es spirituelle Inputs. Am Ende stand eine Übernachtung im Matratzenlager und am Sonntag eine gemeinsame Messe aller drei Badener Pfarren mit dem festlichen Einzug der jungen Wallfahrer.
 photos:
