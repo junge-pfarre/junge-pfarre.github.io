@@ -20,6 +20,8 @@ defaults:
     values:
       flyer: true
 
+exclude: [CNAME,Gemfile,Gemfile.lock,LICENSE,README.md]
+
 markdown: kramdown
 
 paginate: 5

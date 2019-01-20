@@ -1,3 +1,5 @@
+---
+---
 # Bibelteilen
 Beim Bibelteilen in unseren Gruppenräumen der Frauenkirche beschäftigen wir uns genauer mit der heiligen Schrift.
 

@@ -1,3 +1,5 @@
+---
+---
 # TreffPUNKT - Du. Ich. Gott.
 
 ![TreffPUNKT Flyer]({{ site.baseurl }}{% link assets/fotos/TreffPUNKT_Flyer.jpg %})

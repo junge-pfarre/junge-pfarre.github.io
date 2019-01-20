@@ -1,6 +1,5 @@
-﻿---
 ---
-
+---
 # Frauenkirche Baden
 Adresse: <a href="geo:48.00711,16.23447?z=18">Frauengasse 3, 2500 Baden</a>
 
