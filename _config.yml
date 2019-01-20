@@ -22,10 +22,14 @@ defaults:
 
 markdown: kramdown
 
+paginate: 5
+paginate_path: "/fotos/page:num/"
+
 permalink: :title
 
 plugins:
   - jekyll-coffeescript
+  - jekyll-paginate
 
 repository: junge-pfarre/junge-pfarre.github.io
 

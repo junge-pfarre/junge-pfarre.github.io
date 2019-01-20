@@ -1,0 +1,11 @@
+---
+---
+{% include pagination_links.md %}
+<h1 span="margin: 0;">Fotos</h1>
+<!-- Nimm alle Posts im Ordner "_posts" und füge sie paginated mit Titel und Inhalt hier ein. -->
+{% for post in paginator.posts %}
+  <h2><span class="photo-date">{{ post.date | date: "%e.%m.%Y" }}</span>{{ post.title }}</h2>
+  {{ post.content }}
+{% endfor %}
+
+{% include pagination_links.md %}
