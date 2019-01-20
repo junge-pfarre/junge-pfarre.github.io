@@ -18,3 +18,7 @@ _Gemütliches Zusammensitzen nach dem Bibelteilen_
 ## Bibelteilen-Leitfaden
 
 Du möchtest nachschauen, was dich beim Bibelteilen genau erwartet, oder sogar selbst mit Freunden bibelteilen? In den [Downloads]({{ site.baseurl }}{% link downloads.md %}) findest du unseren Bibelteilen-Leitfaden zum Herunterladen.
+
+## Banner und Flyer für Social Media
+
+Bei den [Downloads]({{ site.baseurl }}{% link downloads.md %}) gibt es auch einen quadratischen Flyer zum Teilen auf WhatsApp, etc. und einen Banner für Webseiten.
