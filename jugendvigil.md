@@ -9,7 +9,7 @@ Jedes Monat machen sich einige junge Leute auf den Weg, um dann gemeinsam zu sin
 Du bist gefirmt und offen für Neues?
 Perfekt! - Dann komm doch einfach mal mit und lass dich - gemeinsam mit bis zu 200 anderen Jugendlichen - auf ein Abenteuer mit Gott ein.
 
-- Termin: Jeden 1. Freitag im Monat
+- Termin: Jeden 1. Freitag im Monat - den nächsten Termin findest du im [Kalender]({{ site.baseurl }}{% link kalender.md %})
 - Uhrzeit: 20:15-22:00 (Abfahrt in Baden ca. 19:45)
 - Wo: Kreuzkapelle Stift Heiligenkreuz
 - Was brauche ich: Die Firmung, Offenheit, Freude an Gemeinschaft
