@@ -10,4 +10,4 @@ Bei [Bibelteilen]({{ site.baseurl }}{% link bibelteilen.md %}) und anderen Angeb
 Wenn du also bereit bist, dich auf **Gott** einzulassen und dazu noch **neue Freundschaften** schließen möchtest, bist du genau richtig.
 Komm doch einfach mal vorbei – wir freuen uns darauf, Dich kennenzulernen.
 
-*Leitung: Stefan Brand \| Sprecher: Jakob Sellner*
+*Leitung: Stefan Brand*
